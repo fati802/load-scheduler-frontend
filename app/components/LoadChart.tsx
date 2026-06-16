@@ -76,9 +76,9 @@ export default function LoadChart({ data, peakLimit }: LoadChartProps) {
             tickLine={false}
           />
           <Tooltip
-            formatter={(value: number | string) => [`${(Number(value) / 1000).toFixed(2)} kW`, 'Load']}
-            labelFormatter={(h) => `Hour ${h}:00`}
-            contentStyle={{ fontFamily: 'DM Sans', fontSize: '12px', borderRadius: '8px', border: '1px solid var(--border)' }}
+             formatter={(value: any) => [`${(Number(value) / 1000).toFixed(2)} kW`, 'Load']}
+             labelFormatter={(h) => `Hour ${h}:00`}
+             contentStyle={{ fontFamily: 'DM Sans', fontSize: '12px', borderRadius: '8px', border: '1px solid var(--border)' }}
           />
           <ReferenceLine y={peakLimit} stroke="#EF4444" strokeDasharray="4 4" strokeWidth={1.5} />
           <Bar dataKey="total_load_w" radius={[4, 4, 0, 0]}>
