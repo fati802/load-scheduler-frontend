@@ -26,7 +26,7 @@ const priorityStyles: Record<string, { color: string; border: string; bg: string
   Low:    { color: '#22C55E', border: '#86EFAC', bg: '#F0FDF4' },
 };
 
-const applianceIcons: Record<string, React.ReactElement> = {const applianceIcons: Record<string, React.ReactElement> = {
+const applianceIcons: Record<string, React.ReactElement> = {
   AC: (
     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6B7280" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <rect x="2" y="7" width="20" height="10" rx="2"/><line x1="7" y1="17" x2="7" y2="21"/>
