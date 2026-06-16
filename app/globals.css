@@ -1,26 +1,51 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #7C6FF7;
+  --primary-light: #EEF0FE;
+  --primary-dark: #5B54C5;
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --border: #E5E7EB;
+  --sidebar-bg: #F8FAFB;
+  --page-bg: #F3F4F6;
+  --white: #FFFFFF;
+  --alert-red: #EF4444;
+  --alert-red-light: #FEE2E2;
+  --alert-amber: #F59E0B;
+  --alert-amber-light: #FEF3C7;
+  --success: #22C55E;
+  --success-light: #DCFCE7;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html.dark {
+  --primary: #7C6FF7;
+  --primary-light: #1e1b4b;
+  --primary-dark: #5B54C5;
+  --text-primary: #F9FAFB;
+  --text-secondary: #9CA3AF;
+  --border: #374151;
+  --sidebar-bg: #111827;
+  --page-bg: #0F172A;
+  --white: #1F2937;
+  --alert-red: #EF4444;
+  --alert-red-light: #3b0f0f;
+  --alert-amber: #F59E0B;
+  --alert-amber-light: #3b2a00;
+  --success: #22C55E;
+  --success-light: #052e16;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--page-bg);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
 }
